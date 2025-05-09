@@ -1,0 +1,31 @@
+Pseudocode on Mortgage Calculator
+
+
+Prompt the user to enter the Principal amount
+cast the principal amount to a floating number
+
+Prompt the user to enter the Annual Interest Rate
+cast the annual interest rate to a floating number
+
+Prompt the user to enter the Duration in Years
+cast the duration in years to a floating number 
+
+write out the formulas
+firstly we will turn the percentage values to decimal value
+
+to get the monthly interest rate, first the annual interest rate will be divided by 100 and then divided by 12(that is, the number of months in a year) 
+
+to calculate the number of months, the number of years will be multiplied by the number of months in a year(12)
+
+we then write the formula for finding the monthly mortgage payment
+
+i will be writing the formula in two places for readability purpose
+
+first formula is monthly interest rate multiply by (1 + monthly interest rate) raise to the power of number of months
+
+second formula is (1 + monthly interest rate) raise to the power of number of months - 1
+
+assign the first and second formula to the mortgage monthly payment and multiply it by the principal amount
+
+print the result..
+ 
