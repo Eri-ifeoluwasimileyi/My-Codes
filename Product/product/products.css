@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+  background-color: antiquewhite;
+}
+
+.navBarContainer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+
+}
+
+.signUp{
+    padding: 5px 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.signUp:hover{
+    background-color: deeppink;
+    transition: all 0.3s ease-in-out;
+}
+
+.navLinks{
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: large;
+    width: 400px;
+}
+
+.navLinks li{
+    list-style: none;
+ }
+
+.navLinks a{
+    text-decoration: none;
+    color: black;
+}
+.navLinks a:hover{
+    color: deeppink;
+    transition: all 0.3s ease-in-out;
+}
+
+img {
+    width: 200px;
+    height: 150px;
+    object-fit:contain;
+
+}  
+ 
+img:hover{
+    transform: scale(1.1);
+    transition: all 0.3s ease-in-out;
+    
+}
+
+.productContainer{
+    font-style: normal;
+    font: gray;
+    font-size: medium;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.products{
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
+    width: 250px;   
+}
+
+.products:hover{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    transition: all 0.3s ease-in-out;
+}
