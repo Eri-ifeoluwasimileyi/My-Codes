@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <link href="style.css" rel="stylesheet" />
+    <title>JavaScript DOM </title>
+  </head>
+  <body>
+  	<div id="wrapper">
+	    <header>
+	    	<div id="page-banner">
+	    		<h1 class="title">Task Manager</h1>
+                <form id="search-tasks">
+                    <input type="text" placeholder="Search tasks..." />
+					<button>Search</button>
+                </form>
+	    	</div>
+	    </header>
+	    <div id="task-list">
+	    	<h2 class="title">Tasks to Complete</h2>
+	    	<ul>
+	    		<li>
+                    <input type="checkbox" class="tick-box">
+	    			<span class="name">Interview a psychopath</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+					<input type="checkbox" class="tick-box">
+	    			<span class="name">Kill a cat</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+					<input type="checkbox" class="tick-box">
+	    			<span class="name">Go to the gym</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+	    		<li>
+					<input type="checkbox" class="tick-box">
+	    			<span class="name">Finish my show</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+				<li>
+					<input type="checkbox" class="tick-box">
+	    			<span class="name">Read a book</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+				<li>
+					<input type="checkbox" class="tick-box">
+	    			<span class="name">Write some code</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+				<li>
+					<input type="checkbox" class="tick-box">
+	    			<span class="name">Cook dinner</span>
+	    			<span class="delete">delete</span>
+	    		</li> 
+				<li>
+					<input type="checkbox" class="tick-box">
+	    			<span class="name">Plan a trip</span>
+	    			<span class="delete">delete</span>
+	    		</li>
+
+			</ul>
+	    </div>
+	    <form type="submit" id="add-task">
+	    	<input type="text" placeholder="Add a task..." />
+	    	<button>Add</button>
+	    </form>
+	</div>
+</body>
+<script src="./todo.js"></script>
+</html>

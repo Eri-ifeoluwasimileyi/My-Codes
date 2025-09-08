@@ -78,7 +78,7 @@ searchInput.addEventListener("keyup", (onKeyUp) => {
         //this gets the text in the first child element of li, which is span.
 
         if(bookTitle.startsWith(value)){
-            book.style.display = "block"
+             book.style.display = "block"
         }
         else{
             book.style.display = "none"
