@@ -1,5 +1,62 @@
 body {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
   background-color: wheat;
 }
 
-/*# sourceMappingURL=style.css.map */
+.content {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  background-color: plum;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.content h1 {
+  color: purple;
+}
+.content h4 {
+  color: palevioletred;
+}
+.content table {
+  width: 100%;
+  margin-top: 20px;
+  border-collapse: collapse;
+}
+.content table th, .content table td {
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+.content table th th, .content table td th {
+  background-color: plum;
+  color: #333;
+}
+.content a {
+  display: inline-block;
+  padding: 8px 16px;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+.content a:hover {
+  background-color: plum;
+}
+.content input {
+  padding: 10px;
+  margin: 5px;
+  border: solid 1px;
+  border-radius: 5px;
+}
+.content #add-btn {
+  background-color: black;
+  color: #fff;
+  cursor: pointer;
+}
+.content #add-btn:hover {
+  background-color: #333;
+}/*# sourceMappingURL=style.css.map */
