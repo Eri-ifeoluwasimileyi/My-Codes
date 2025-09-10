@@ -52,6 +52,15 @@ body {
   border: solid 1px;
   border-radius: 5px;
 }
+.content input[type=checkbox] {
+  width: 18px;
+  height: 18px;
+  accent-color: purple;
+  cursor: pointer;
+}
+.content input[type=checkbox]:checked {
+  accent-color: plum;
+}
 .content #add-btn {
   background-color: black;
   color: #fff;

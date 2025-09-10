@@ -86,6 +86,21 @@ def edit(id):
     return render_template('edit.html', task=task)
 
 
+@app.route('/toggle/<int:id>', methods=['POST'])
+def toggle_status(id):
+    try:
+        task = tasks_collection.find_one({'id': id})
+        if not task:
+            return 'Task not found', 404
+
+        new_status = not task.get('completed', False)
+        tasks_collection.update_one(
+            {'id': id},
+            {'$set': {'completed': new_status}}
+        )
+        return redirect('/')
+    except Exception as e:
+        return f'Error toggling task: {e}'
 
  
  

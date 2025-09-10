@@ -20,8 +20,24 @@
             </tr>
             {% for task in tasks %}
               <tr>
-                  <td>{{ task.content }}</td>
-                  <td>{{ task.completed }}</td>
+                <td> 
+                  {% if task.completed %} 
+                    <s>{{ task.content }}</s>
+                  {% else %}
+                  {{ task.content }}
+                  {% endif %}
+                </td>
+                
+                <td>
+                    <form action="/toggle/{{ task.id }}" method="POST" style="display:inline;">
+                      <input 
+                        type="checkbox" 
+                        name="completed" 
+                        onchange="this.form.submit()" 
+                        {% if task.completed %} checked {% endif %}/>
+                      </form>
+                  </td>
+                  
                   <td>{{ task.created_At.strftime('%Y/%m/%d') }}</td>
                   <td>
                     <a href="/delete/{{ task.id }}">Delete</a>
