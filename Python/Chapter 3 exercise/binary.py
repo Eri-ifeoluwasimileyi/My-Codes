@@ -4,6 +4,11 @@ decimal_point = 0
 positional_value = 0
 
 while binary > 0:
+
+	if binary > 2 amd binary < 1:
+		print('invalid input')
+
+
 	number = binary % 10
 
 	decimal_point = decimal_point + number * (2 ** positional_value)
@@ -12,3 +17,4 @@ while binary > 0:
 	
 
 print('The decimal equivalent of the binary number is:', decimal_point)
+

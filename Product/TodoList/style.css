@@ -175,7 +175,7 @@ h1, h2{
     background: rgb(165, 48, 165);
 }
 
-.delete:active{
+.delete:active{ 
     background: white;
  }
 
